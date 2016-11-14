@@ -71,7 +71,7 @@ class GenderPredictor(object):
 		else:
 			with open(filename, "rb") as f:
 				classifier = cPickle.load(f)
-		#print nltk.classify.accuracy(classifier, test_set)
+		print nltk.classify.accuracy(classifier, test_set)
 		return classifier
 
 
